@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffd6e0, #ffe8f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .card {
+      width: 90%;
+      max-width: 320px;
+      height: 460px;
+      perspective: 1000px;
+    }
+    .inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+    .card:hover .inner {
+      transform: rotateY(180deg);
+    }
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .front {
+      background: #fff0f5;
+      text-align: center;
+    }
+    .front img {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+    }
+    .front h2 {
+      margin-top: 10px;
+      color: #ff3399;
+    }
+    .back {
+      background: #ffe6f2;
+      transform: rotateY(180deg);
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .back h3 {
+      color: #cc0066;
+      margin-bottom: 10px;
+    }
+    .message-box {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: rgba(255, 240, 245, 0.3);
+      border: 2px dashed #ff99cc;
+    }
+    .message-box::-webkit-scrollbar {
+      width: 6px;
+    }
+    .message-box::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(#ff66b2, #ff99cc);
+      border-radius: 10px;
+    }
+    .message-box::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .message-box p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #660033;
+      margin-bottom: 15px;
+    }
+    .button-wrap {
+      text-align: center;
+    }
+    .popup-btn {
+      margin-top: 10px;
+      background: linear-gradient(to right, #ff66b2, #ff99cc);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .popup-btn:hover {
+      background: linear-gradient(to right, #ff3385, #ff66b2);
+    }
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .popup-content {
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .popup-content h2 {
+      color: #cc0066;
+      margin-bottom: 15px;
+    }
+    .popup-slider {
+      display: flex;
+      overflow: hidden;
+      border-radius: 15px;
+      margin: 20px auto;
+      width: 90%;
+    }
+    .slider-track {
+      display: flex;
+      animation: slide 20s linear infinite;
+    }
+    .slider-track img {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin: 0 10px;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .confetti {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .confetti span {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: fall 6s linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+  <div class="inner">
+    <div class="front">
+      <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" alt="kiss" style="width: 40px; height: 40px; margin-bottom: 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" alt="cake">
+      <h2>Happy Birthday Begum Mera Tony Tappu Meri Don ❤️</h2>
+      <p style="font-size: 16px; color: #cc0066;">سالگرہ مبارک علیشہ 💕</p>
+    </div>
+    <div class="back">
+      <h3>To my Future Wife 💍</h3>
+      <div class="message-box">
+        <p>Dear Alisha,</p>
+        <p>You are the light of my life and the joy in my every day. Every smile of yours is a blessing I cherish. On your special day, I just want you to know how deeply I love you and how lucky I feel to have you in my life. ❤️</p>
+        <p>یہ دن تمہاری خوشبو سے مہکتا رہے، تمہیں ہر خوشی ملے جس کا تم نے خواب دیکھا ہو۔ 🎁</p>
+        <p>میں ہر دن تمہیں خوش رکھنے کی کوشش کروں گا، ہمیشہ تمہارے ساتھ رہوں گا، ہر مسکراہٹ کی وجہ بنوں گا۔</p>
+      </div>
+      <div class="button-wrap">
+        <button class="popup-btn" onclick="openPopup()">Click here baby 💗</button>
+        <p style="margin-top: 10px; font-weight: bold; color: #cc0066;">Love, Hasnain 💌</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="confetti" id="confetti"></div>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <button onclick="closePopup()" style="position:absolute;top:10px;right:20px;background:#ff99cc;border:none;padding:5px 10px;border-radius:10px;color:#fff;font-weight:bold;cursor:pointer;">✖</button>
+      <h2>Us Together Forever 💞</h2>
+      <div class="popup-slider">
+        <div class="slider-track">
+          <img src="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" alt="Her">
+          <img src="https://cdn-icons-png.flaticon.com/512/4325/4325921.png" alt="Me">
+          <img src="https://cdn.pixabay.com/photo/2020/01/17/19/25/love-4770181_960_720.jpg" alt="Together">
+          <img src="https://cdn.pixabay.com/photo/2021/03/04/20/45/couple-6069051_960_720.jpg" alt="Couple">
+          <img src="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" alt="Her">
+          <img src="https://cdn-icons-png.flaticon.com/512/4325/4325921.png" alt="Me">
+        </div>
+      </div>
+      <p style="margin-top: 10px; color: #660033;">You're my today, tomorrow & forever ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function randomConfetti() {
+      const options = [
+        'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+        'https://cdn-icons-png.flaticon.com/512/786/786453.png',
+        'https://cdn-icons-png.flaticon.com/512/482/482465.png',
+        'https://cdn-icons-png.flaticon.com/512/763/763745.png',
+        'https://cdn-icons-png.flaticon.com/512/869/869869.png',
+        'https://cdn-icons-png.flaticon.com/512/2589/2589175.png'
+      ];
+      return options[Math.floor(Math.random() * options.length)];
+    }
+    const confettiContainer = document.getElementById("confetti");
+    for (let i = 0; i < 100; i++) {
+      const span = document.createElement("span");
+      span.style.left = Math.random() * 100 + "%";
+      span.style.top = Math.random() * -100 + "%";
+      span.style.backgroundImage = `url(${randomConfetti()})`;
+      span.style.animationDelay = Math.random() * 5 + "s";
+      confettiContainer.appendChild(span);
+    }
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
